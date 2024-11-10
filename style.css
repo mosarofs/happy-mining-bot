@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, sans-serif; /* ফন্ট সেট করা */
+}
+
+h1 {
+    color: #333; /* শিরোনাম রঙ */
+}
+
+#leaderboard {
+    list-style-type: none; /* তালিকা বিন্যাস পরিবর্তন করা */
+    padding: 0;
+    margin: 20px 0;
+}
+
+#leaderboard li {
+    background-color: #f0f0f0; /* ব্যাকগ্রাউন্ড রঙ */
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px; /* কোণ গোলাকার করা */
+}

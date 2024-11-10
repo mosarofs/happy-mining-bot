@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Coins</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Your Coins</h1>
+    <p id="yourCoinCount">Coins: 0</p> <!-- এখানে কয়েন সংখ্যা দেখানো হবে -->
+    <button onclick="window.location.href='index.html'">Back to Mining App</button> <!-- ফেরত যাওয়ার বোতাম -->
+
+    <script>
+        // Local Storage থেকে কয়েন সংখ্যা পড়া
+        let coinCount = 0;
+        if (localStorage.getItem("coins")) {
+            coinCount = parseInt(localStorage.getItem("coins"));
+        }
+
+        // কয়েন সংখ্যা দেখানো
+        document.getElementById("yourCoinCount").innerText = "Coins: " + coinCount;
+    </script>
+</body>
+</html>
